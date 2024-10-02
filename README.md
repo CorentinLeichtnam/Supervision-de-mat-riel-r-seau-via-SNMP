@@ -1,7 +1,5 @@
 # Supervision-de-materiel-reseau-via-SNMP
 
-Avant le 23 octobre rendre le rapport intermediaire
-
 ##Diagrame de GANTT du projet
 
 
@@ -16,31 +14,35 @@ Avant le 23 octobre rendre le rapport intermediaire
 
 
 
-+---------------------+              +--------------------+              +--------------------+
-|      Devices         |1           n|      OID            |1           n|      Logs           |
-+---------------------+<------------>|---------------------|<------------>|---------------------|
-| device_id (PK)       |              | oid_id (PK)         |              | log_id (PK)         |
-| hostname             |              | oid_value           |             | device_id (FK)      |
-| ip_address           |              | oid_name            |             | oid_id (FK)         |
-| device_type          |              | device_id (FK)      |             | value               |
-| description          |              +--------------------+              | timestamp           |
-| status               |                                                  | severity            |
-|  last_updated        |                                                       | message             |
- +---------------------+                                                        +--------------------+
-                                                     
 
-                                                    | 
-+---------------------+              +--------------------+ 
-|      Alerts          |1           n|   Logs_Access       |
-+---------------------+<------------>|---------------------|  
-| alert_id (PK)        |              | access_id (PK)      |
-| device_id (FK)       |              | log_id (FK)         |
-| alert_type           |              | user_id (FK)        |
-| severity             |              | access_time         |
-| message              |              +---------------------+
-| timestamp            |
-| resolved             |
+
++---------------------+              +--------------------+               +--------------------+              +--------------------+
+|      Devices         |1           n|   Devices_OID       |n           1|      OID            |1            n|      Logs           |
++---------------------+<------------>|---------------------|------------>|---------------------|<------------>|---------------------|
+| device_id (PK)       |              | device_oid_id (PK)  |             | oid_id (PK)         |             | log_id (PK)         |
+| hostname             |              | device_id (FK)      |             | oid_value           |             | device_id (FK)      |
+| ip_address           |              | oid_id (FK)         |             | oid_name            |             | oid_id (FK)         |
+| location             |              | timestamp           |             | description         |             | value               |
+| device_type          |              +--------------------+             +---------------------+              | severity            |
+| description          |                                                                                      | message             |
+| status               |                                                                                      | timestamp           |
+| last_updated         |                                                                                      +--------------------+
 +---------------------+
+
+
+                                                                         +---------------------+              +--------------------+ 
+                                                                         |      Alerts          |1           n|   Logs_Access       |
+                                                                         +---------------------+<------------>|---------------------|  
+                                                                         | alert_id (PK)        |             | access_id (PK)      |
+                                                                         | device_id (FK)       |             | log_id (FK)         |
+                                                                         | alert_type           |             | user_id (FK)        |
+                                                                         | severity             |             | access_time         |
+                                                                         | message              |             +---------------------+
+                                                                         | timestamp            |
+                                                                         | resolved             |
+                                                                         +---------------------+
+
+ 
 
 +---------------------+
 |      Users           |        
@@ -50,4 +52,3 @@ Avant le 23 octobre rendre le rapport intermediaire
 | email                |
 | role                 |
 +---------------------+
-
