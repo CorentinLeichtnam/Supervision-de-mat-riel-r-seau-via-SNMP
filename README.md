@@ -1,5 +1,7 @@
 # Supervision-de-materiel-reseau-via-SNMP
 
+Avant le 23 octobre rendre le rapport intermediaire
+
 ##Diagrame de GANTT du projet
 
 
