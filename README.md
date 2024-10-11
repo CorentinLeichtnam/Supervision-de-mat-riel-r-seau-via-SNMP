@@ -1,16 +1,16 @@
 # Supervision-de-materiel-reseau-via-SNMP
 
-##Diagrame de GANTT du projet
+## Diagrame de GANTT du projet
 
 
 
-##Différents solutions choisis 
+## Différents solutions choisis 
 
-###Module de configuration :
+### Module de configuration :
 
-###Module de surveillance :
+### Module de surveillance :
 
-###Module de « Log » :	
+### Module de « Log » :	
 
 
 
