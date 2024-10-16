@@ -1,3 +1,5 @@
+LEICHTNAM Corentin & STRENTZ Nicolas
+
 # Supervision-de-materiel-reseau-via-SNMP
 
 ## Diagrame de GANTT du projet
