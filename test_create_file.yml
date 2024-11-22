@@ -1,8 +1,0 @@
----
-- name: Test playbook to create a file named helloworld in /tmp
-  hosts: all
-  tasks:
-    - name: Create a file named helloworld in /tmp
-      file:
-        path: /tmp/helloworld
-        state: touch
