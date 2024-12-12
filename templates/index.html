@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* Styles pour la fenêtre de création */
+        #add-equipment-form,
+        #edit-equipment-form {
+            display: none; /* Masqué par défaut */
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Boutons */
+        #toggle-add-form {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #toggle-add-form:hover {
+            background-color: #0056b3;
+        }
+
+        .action-btn {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .action-btn:hover {
+            background-color: #ddd;
+        }
+
+        /* Table des résultats */
+        #monitor-result {
+            display: none; /* Masqué par défaut */
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Bandeau supérieur */
+#navbar {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+#navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#navbar .nav-buttons {
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+    align-items: center; /* Aligner verticalement les boutons */
+}
+
+
+.nav-button {
+    padding: 10px 20px; /* Marges internes uniformes */
+    font-size: 16px; /* Taille du texte uniforme */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    height: 45px; /* Hauteur fixe pour aligner les boutons */
+    display: flex; /* Pour centrer le contenu */
+    align-items: center; /* Alignement vertical du texte */
+    justify-content: center; /* Alignement horizontal du texte */
+}
+
+.nav-button:hover {
+    opacity: 0.9;
+}
+
+
+.add-equipment-btn {
+    background-color: #007bff;
+}
+
+.logs-btn {
+    background-color: #28a745;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h1>Equipment Management</h1>
+        <div class="nav-buttons">
+            <button class="nav-button add-equipment-btn" id="toggle-add-form">Ajout d'un équipement</button>
+            <a href="/logs" class="nav-button logs-btn">Voir les Logs</a>
+        </div>
+    </div>
+    <!-- Formulaire pour ajouter un nouvel équipement -->
+    <form id="add-equipment-form">
+        <h2>Ajout d'un équipment</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="ip">IP Address:</label>
+        <input type="text" id="ip" name="ip" required>
+        <br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description">
+        <br>
+        <button type="submit">Ajout d'un équipment</button>
+    </form>
+
+    <!-- Formulaire pour modifier un équipement -->
+    <form id="edit-equipment-form">
+        <h2>Edit Equipment</h2>
+        <input type="hidden" id="edit-id" name="id">
+        <label for="edit-name">Name:</label>
+        <input type="text" id="edit-name" name="name" required>
+        <br>
+        <label for="edit-ip">IP Address:</label>
+        <input type="text" id="edit-ip" name="ip" required>
+        <br>
+        <label for="edit-description">Description:</label>
+        <input type="text" id="edit-description" name="description">
+        <br>
+        <button type="submit">Save Changes</button>
+        <button type="button" onclick="cancelEdit()">Cancel</button>
+    </form>
+
+    <!-- Liste des équipements -->
+    <h2>Equipment List</h2>
+    <ul id="equipment-list">
+        {% for equipment in equipments %}
+        <li>
+            <strong>{{ equipment.name }}</strong>
+            (
+            {{ equipment.display_ip }} - 
+            <span style="color: {{ 'green' if equipment.status == 'OK' else 'red' }};">
+                {{ equipment.status }}
+            </span>
+            )
+            - {{ equipment.description }}
+            <button class="action-btn" onclick="monitorEquipment({{ equipment.id }})">Monitor</button>
+            <button class="action-btn" onclick="monitorTraffic({{ equipment.id }})">Traffic</button>
+            <button class="action-btn" onclick="generateGraph({{ equipment.id }})">Graph</button>
+            <button class="action-btn" onclick="editEquipment({{ equipment.id }}, '{{ equipment.name | safe }}', '{{ equipment.ip | safe }}', '{{ equipment.description | safe }}')">Edit</button>
+            <button id="toggle-traffic-fetch-{{ equipment.id }}" onclick="toggleTrafficFetch({{ equipment.id }})">Start Traffic Monitoring</button>
+            <button class="action-btn" onclick="deleteEquipment({{ equipment.id }})">Delete</button>
+        </li>
+        {% endfor %}
+    </ul>
+    
+
+    <!-- Affichage des résultats du monitoring -->
+    <div id="monitor-result">
+        <h2 id="monitor-title">Monitor Result</h2>
+        <table id="monitor-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="monitor-body">
+                <!-- Les lignes de résultat seront insérées ici dynamiquement -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Gestion de l'affichage/masquage du formulaire d'ajout
+        document.getElementById("toggle-add-form").addEventListener("click", function () {
+            const form = document.getElementById("add-equipment-form");
+            if (form.style.display === "none" || form.style.display === "") {
+                form.style.display = "block"; // Afficher le formulaire
+                this.textContent = "Fermer"; // Changer le texte du bouton
+            } else {
+                form.style.display = "none"; // Masquer le formulaire
+                this.textContent = "Ajout d'un équipmentt"; // Réinitialiser le texte du bouton
+            }
+        });
+
+        // Ajouter un nouvel équipement
+        document.getElementById("add-equipment-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const response = await fetch("/add", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                window.location.reload();
+            } else {
+                alert("Error adding equipment");
+            }
+        });
+
+        // Modifier un équipement
+        function editEquipment(id, name, ip, description) {
+            const editForm = document.getElementById("edit-equipment-form");
+            editForm.style.display = "block";
+            document.getElementById("edit-id").value = id;
+            document.getElementById("edit-name").value = name;
+            document.getElementById("edit-ip").value = ip;
+            document.getElementById("edit-description").value = description;
+        }
+
+        // Sauvegarder les modifications d'un équipement
+        document.getElementById("edit-equipment-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const id = document.getElementById("edit-id").value;
+            const formData = new FormData(e.target);
+
+            const response = await fetch(`/update/${id}`, {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                window.location.reload();
+            } else {
+                alert("Error updating equipment");
+            }
+        });
+
+        // Annuler la modification d'un équipement
+        function cancelEdit() {
+            const editForm = document.getElementById("edit-equipment-form");
+            editForm.style.display = "none";
+        }
+
+        // Autres actions
+        async function monitorEquipment(id) {
+            const response = await fetch(`/monitor/${id}`);
+            displayMonitorResult(response, "Monitor Result");
+        }
+
+        async function monitorTraffic(id) {
+            const response = await fetch(`/traffic/${id}`);
+            displayMonitorResult(response, "Traffic Details");
+        }
+
+        async function displayMonitorResult(response, title) {
+            const resultDiv = document.getElementById("monitor-result");
+            const titleElement = document.getElementById("monitor-title");
+            const tableBody = document.getElementById("monitor-body");
+
+            if (response.ok) {
+                const data = await response.json();
+                resultDiv.style.display = "block";
+                titleElement.innerText = title;
+
+                tableBody.innerHTML = ""; // Vider les anciennes données
+
+                for (const [key, value] of Object.entries(data)) {
+                    const row = document.createElement("tr");
+                    const metricCell = document.createElement("td");
+                    const valueCell = document.createElement("td");
+
+                    metricCell.textContent = key;
+                    valueCell.textContent = value;
+
+                    row.appendChild(metricCell);
+                    row.appendChild(valueCell);
+                    tableBody.appendChild(row);
+                }
+            } else {
+                alert("Failed to retrieve data.");
+            }
+        }
+
+        async function generateGraph(id) {
+            window.location.href = `/graph/${id}`;
+        }
+
+        async function deleteEquipment(id) {
+            const response = await fetch(`/delete/${id}`, { method: "POST" });
+            if (response.ok) {
+                window.location.reload();
+            } else {
+                alert("Error deleting equipment");
+            }
+        }
+
+        let monitoringIntervals = {};
+
+        function toggleTrafficFetch(equipmentId) {
+            const button = document.getElementById(`toggle-traffic-fetch-${equipmentId}`);
+
+            if (monitoringIntervals[equipmentId]) {
+                clearInterval(monitoringIntervals[equipmentId]);
+                delete monitoringIntervals[equipmentId];
+                button.textContent = "Start Traffic Monitoring";
+                console.log(`Traffic monitoring stopped for equipment ID: ${equipmentId}`);
+            } else {
+                monitoringIntervals[equipmentId] = setInterval(() => {
+                    fetch(`/traffic/${equipmentId}`).then(response => {
+                        if (response.ok) {
+                            return response.json();
+                        } else {
+                            throw new Error("Failed to fetch traffic data.");
+                        }
+                    }).then(data => {
+                        console.log(`Traffic data for equipment ID ${equipmentId}:`, data);
+                    }).catch(error => {
+                        console.error(error);
+                    });
+                }, 60000);
+                button.textContent = "Stop Traffic Monitoring";
+                console.log(`Traffic monitoring started for equipment ID: ${equipmentId}`);
+            }
+        }
+
+        
+        async function fetchTrafficData() {
+            // Appelez l'API pour chaque équipement
+            const equipments = {{ equipments|tojson }};
+            for (const equipment of equipments) {
+                const response = await fetch(`/traffic/${equipment.id}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log(`Traffic data for ${equipment.name}:`, data);
+                } else {
+                    console.error(`Failed to fetch traffic data for ${equipment.name}`);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
