@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Logs</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Logs</h1>
+
+    <!-- Tableau interactif -->
+    <table id="logs-table" class="display">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Level</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                {% set parts = log.split(" - ", 2) %}
+                <td>{{ parts[0] }}</td>
+                <td>{{ parts[1] }}</td>
+                <td>{{ parts[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Bouton pour retourner à la liste des équipements -->
+    <div style="margin-top: 20px; text-align: center;">
+        <a href="/" class="button">Back to Equipment Management</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialiser DataTables sur le tableau des logs
+            $('#logs-table').DataTable({
+                pageLength: 10, // Afficher 10 entrées par page
+                lengthMenu: [5, 10, 25, 50],
+                order: [[0, "desc"]], // Trier par défaut par la colonne Timestamp
+                language: {
+                    search: "Rechercher :",
+                    lengthMenu: "Afficher _MENU_ entrées",
+                    info: "Affichage de _START_ à _END_ sur _TOTAL_ entrées",
+                    infoEmpty: "Aucune entrée disponible",
+                    infoFiltered: "(filtré sur _MAX_ entrées au total)",
+                    paginate: {
+                        first: "Premier",
+                        last: "Dernier",
+                        next: "Suivant",
+                        previous: "Précédent"
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

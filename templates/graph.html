@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Graph</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Traffic Evolution for Equipment</h1>
+    
+    <!-- Formulaire pour filtrer les données -->
+    <form id="filter-form" style="margin-bottom: 20px;">
+        <label for="start-date">Start Date:</label>
+        <input type="datetime-local" id="start-date" name="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="datetime-local" id="end-date" name="end-date">
+        <br>
+        <label>
+            <input type="checkbox" id="show-in" name="show-in" checked>
+            Show In Octets
+        </label>
+        <label>
+            <input type="checkbox" id="show-out" name="show-out" checked>
+            Show Out Octets
+        </label>
+        <br>
+        <button type="button" onclick="updateGraph()">Update Graph</button>
+    </form>
+
+    <!-- Conteneur pour afficher le graphique -->
+    <div id="graph-container">
+        {{ graph|safe }}
+    </div>
+
+    <!-- Bouton pour retourner à la liste des équipements -->
+    <div style="margin-top: 20px;">
+        <a href="/" class="button">Back to Equipment List</a>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #graph-container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #filter-form {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+
+    <script>
+        async function updateGraph() {
+            const startDate = document.getElementById("start-date").value;
+            const endDate = document.getElementById("end-date").value;
+            const showIn = document.getElementById("show-in").checked;
+            const showOut = document.getElementById("show-out").checked;
+        
+            const params = new URLSearchParams({
+                start_date: startDate,
+                end_date: endDate,
+                show_in: showIn,
+                show_out: showOut
+            });
+        
+            const equipmentId = window.location.pathname.split("/").pop();
+        
+            try {
+                const response = await fetch(`/graph/data/${equipmentId}?${params.toString()}`);
+                if (response.ok) {
+                    const graphHTML = await response.text();
+                    console.log("Graph HTML fetched:", graphHTML); // Log pour debug
+                    const container = document.getElementById("graph-container");
+                    container.innerHTML = graphHTML;
+        
+                    // Forcer le rendu avec Plotly
+                    const scripts = container.querySelectorAll("script");
+                    scripts.forEach((script) => {
+                        const newScript = document.createElement("script");
+                        newScript.textContent = script.textContent;
+                        document.body.appendChild(newScript);
+                        document.body.removeChild(newScript);
+                    });
+        
+                    console.log("Graph updated successfully!");
+                } else {
+                    console.error("Failed to fetch graph data:", response.statusText);
+                    alert("Failed to update graph. Please check your inputs.");
+                }
+            } catch (error) {
+                console.error("Error fetching graph data:", error);
+                alert("An error occurred while fetching the graph data.");
+            }
+        }
+
+    </script>
+</body>
+</html>
