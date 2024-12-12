@@ -1,0 +1,168 @@
+/* Reset de base pour éviter les marges et paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Formulaires */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Liste d'équipements */
+#equipment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#equipment-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#equipment-list li strong {
+    font-size: 1.2em;
+}
+
+#equipment-list button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#equipment-list button:hover {
+    background-color: #0056b3;
+}
+
+#equipment-list button:active {
+    background-color: #004494;
+}
+
+/* Section de monitoring */
+#monitor-result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#monitor-result p {
+    font-size: 1.1em;
+}
+
+/* Formulaire de modification */
+#edit-equipment-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#edit-equipment-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#edit-equipment-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#edit-equipment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    form, #monitor-result, #edit-equipment-form {
+        padding: 15px;
+    }
+
+    form button, #edit-equipment-form button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
