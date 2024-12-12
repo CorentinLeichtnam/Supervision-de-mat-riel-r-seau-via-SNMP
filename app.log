@@ -1,0 +1,330 @@
+2024-12-12 09:36:01,479 - INFO - Application démarrée.
+2024-12-12 09:36:01,511 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-12 09:36:01,511 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-12 09:36:01,511 - INFO -  * Restarting with stat
+2024-12-12 09:36:02,038 - INFO - Application démarrée.
+2024-12-12 09:36:02,059 - WARNING -  * Debugger is active!
+2024-12-12 09:36:02,061 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 09:36:12,742 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:12] "GET / HTTP/1.1" 200 -
+2024-12-12 09:36:12,861 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:12] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:36:22,360 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:22] "GET /logs HTTP/1.1" 200 -
+2024-12-12 09:36:22,408 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:36:35,670 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:35] "GET / HTTP/1.1" 200 -
+2024-12-12 09:36:35,711 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:35] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:36:42,431 - INFO - Équipement supprimé : {'id': 5, 'name': 'Test', 'ip': '192.168.141.98', 'description': 'test'}
+2024-12-12 09:36:42,432 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:42] "POST /delete/5 HTTP/1.1" 200 -
+2024-12-12 09:36:42,470 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:42] "GET / HTTP/1.1" 200 -
+2024-12-12 09:36:42,490 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:36:45,397 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:45] "GET /logs HTTP/1.1" 200 -
+2024-12-12 09:36:45,417 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:45] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:36:46,319 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:46] "GET /logs HTTP/1.1" 200 -
+2024-12-12 09:36:46,339 - INFO - 127.0.0.1 - - [12/Dec/2024 09:36:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:38:23,104 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 09:38:23,138 - INFO -  * Restarting with stat
+2024-12-12 09:38:23,567 - INFO - Application démarrée.
+2024-12-12 09:38:23,582 - WARNING -  * Debugger is active!
+2024-12-12 09:38:23,582 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 09:38:25,603 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 09:38:25,658 - INFO -  * Restarting with stat
+2024-12-12 09:38:26,243 - INFO - Application démarrée.
+2024-12-12 09:38:26,259 - WARNING -  * Debugger is active!
+2024-12-12 09:38:26,259 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 09:38:40,209 - INFO - 127.0.0.1 - - [12/Dec/2024 09:38:40] "GET /logs HTTP/1.1" 200 -
+2024-12-12 09:38:40,313 - INFO - 127.0.0.1 - - [12/Dec/2024 09:38:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:39:25,169 - INFO - 127.0.0.1 - - [12/Dec/2024 09:39:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 09:41:52,558 - INFO - 127.0.0.1 - - [12/Dec/2024 09:41:52] "GET / HTTP/1.1" 200 -
+2024-12-12 09:41:52,574 - INFO - 127.0.0.1 - - [12/Dec/2024 09:41:52] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:42:23,439 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:23] "GET / HTTP/1.1" 200 -
+2024-12-12 09:42:23,455 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:23] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:42:50,595 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:50] "GET / HTTP/1.1" 200 -
+2024-12-12 09:42:50,611 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:50] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:42:54,330 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:54] "GET /logs HTTP/1.1" 200 -
+2024-12-12 09:42:54,377 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:54] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:42:54,396 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 09:42:57,519 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:57] "GET / HTTP/1.1" 200 -
+2024-12-12 09:42:57,551 - INFO - 127.0.0.1 - - [12/Dec/2024 09:42:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:43:09,945 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:09] "POST /add HTTP/1.1" 200 -
+2024-12-12 09:43:09,970 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:09] "GET / HTTP/1.1" 200 -
+2024-12-12 09:43:10,001 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:43:15,190 - INFO - Surveillance de trafic pour l'équipement ID 7 : {'timestamp': '2024-12-12T09:43:15.190372', 'equipment_id': 7, 'in_octets': '59250467', 'out_octets': '8996105'}
+2024-12-12 09:43:15,190 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:15] "GET /traffic/7 HTTP/1.1" 200 -
+2024-12-12 09:43:20,237 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:20] "POST /update/7 HTTP/1.1" 200 -
+2024-12-12 09:43:20,268 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:20] "GET / HTTP/1.1" 200 -
+2024-12-12 09:43:20,284 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:20] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 09:43:24,460 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:24] "GET /graph/7 HTTP/1.1" 200 -
+2024-12-12 09:43:24,491 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:43:28,188 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:28] "GET / HTTP/1.1" 200 -
+2024-12-12 09:43:28,219 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 09:43:29,772 - INFO - Équipement supprimé : {'id': 7, 'name': 'Test', 'ip': '127.0.0.2', 'description': 'test'}
+2024-12-12 09:43:29,773 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:29] "POST /delete/7 HTTP/1.1" 200 -
+2024-12-12 09:43:29,786 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:29] "GET / HTTP/1.1" 200 -
+2024-12-12 09:43:29,802 - INFO - 127.0.0.1 - - [12/Dec/2024 09:43:29] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:00:36,783 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:00:36.783381', 'equipment_id': 4, 'in_octets': '59645436', 'out_octets': '9117515'}
+2024-12-12 10:00:36,783 - INFO - 127.0.0.1 - - [12/Dec/2024 10:00:36] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:01:36,747 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:01:36.747326', 'equipment_id': 4, 'in_octets': '59840062', 'out_octets': '9687813'}
+2024-12-12 10:01:36,762 - INFO - 127.0.0.1 - - [12/Dec/2024 10:01:36] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:02:36,424 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:02:36.424672', 'equipment_id': 4, 'in_octets': '59961675', 'out_octets': '9841949'}
+2024-12-12 10:02:36,424 - INFO - 127.0.0.1 - - [12/Dec/2024 10:02:36] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:02:40,888 - INFO - 127.0.0.1 - - [12/Dec/2024 10:02:40] "GET / HTTP/1.1" 200 -
+2024-12-12 10:02:40,907 - INFO - 127.0.0.1 - - [12/Dec/2024 10:02:40] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:03:59,325 - INFO - 127.0.0.1 - - [12/Dec/2024 10:03:59] "GET / HTTP/1.1" 200 -
+2024-12-12 10:03:59,342 - INFO - 127.0.0.1 - - [12/Dec/2024 10:03:59] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:04:00,444 - INFO - 127.0.0.1 - - [12/Dec/2024 10:04:00] "GET / HTTP/1.1" 200 -
+2024-12-12 10:04:00,457 - INFO - 127.0.0.1 - - [12/Dec/2024 10:04:00] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:04:07,851 - INFO - 127.0.0.1 - - [12/Dec/2024 10:04:07] "GET /logs HTTP/1.1" 200 -
+2024-12-12 10:04:07,867 - INFO - 127.0.0.1 - - [12/Dec/2024 10:04:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:05:19,439 - INFO - 127.0.0.1 - - [12/Dec/2024 10:05:19] "GET /graph/data/4?start_date=2024-12-12T10:00&end_date=2024-12-12T10:05&show_in=true&show_out=true HTTP/1.1" 200 -
+2024-12-12 10:05:29,439 - INFO - 127.0.0.1 - - [12/Dec/2024 10:05:29] "GET / HTTP/1.1" 200 -
+2024-12-12 10:05:29,471 - INFO - 127.0.0.1 - - [12/Dec/2024 10:05:29] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:08:12,219 - INFO - 127.0.0.1 - - [12/Dec/2024 10:08:12] "GET / HTTP/1.1" 200 -
+2024-12-12 10:08:12,253 - INFO - 127.0.0.1 - - [12/Dec/2024 10:08:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:17:58,416 - INFO - 127.0.0.1 - - [12/Dec/2024 10:17:58] "GET / HTTP/1.1" 200 -
+2024-12-12 10:17:58,446 - INFO - 127.0.0.1 - - [12/Dec/2024 10:17:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:18:01,042 - INFO - 127.0.0.1 - - [12/Dec/2024 10:18:01] "GET /graph/4 HTTP/1.1" 200 -
+2024-12-12 10:18:01,090 - INFO - 127.0.0.1 - - [12/Dec/2024 10:18:01] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:18:15,077 - INFO - 127.0.0.1 - - [12/Dec/2024 10:18:15] "GET /monitor/4 HTTP/1.1" 200 -
+2024-12-12 10:18:17,186 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:18:17.186118', 'equipment_id': 4, 'in_octets': '61904537', 'out_octets': '10774718'}
+2024-12-12 10:18:17,186 - INFO - 127.0.0.1 - - [12/Dec/2024 10:18:17] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:22:57,279 - INFO - Application démarrée.
+2024-12-12 10:22:57,311 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-12 10:22:57,311 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-12 10:22:57,316 - INFO -  * Restarting with stat
+2024-12-12 10:22:57,758 - INFO - Application démarrée.
+2024-12-12 10:22:57,773 - WARNING -  * Debugger is active!
+2024-12-12 10:22:57,773 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:23:05,297 - INFO - 127.0.0.1 - - [12/Dec/2024 10:23:05] "GET / HTTP/1.1" 200 -
+2024-12-12 10:23:05,548 - INFO - 127.0.0.1 - - [12/Dec/2024 10:23:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:23:09,433 - INFO - 127.0.0.1 - - [12/Dec/2024 10:23:09] "GET /monitor/4 HTTP/1.1" 200 -
+2024-12-12 10:23:11,958 - INFO - 127.0.0.1 - - [12/Dec/2024 10:23:11] "GET /monitor/6 HTTP/1.1" 200 -
+2024-12-12 10:23:14,650 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:23:14.648097', 'equipment_id': 4, 'in_octets': '62420917', 'out_octets': '11188340'}
+2024-12-12 10:23:14,650 - INFO - 127.0.0.1 - - [12/Dec/2024 10:23:14] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:23:33,256 - INFO - 127.0.0.1 - - [12/Dec/2024 10:23:33] "GET /monitor/6 HTTP/1.1" 200 -
+2024-12-12 10:24:07,100 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:07] "GET / HTTP/1.1" 200 -
+2024-12-12 10:24:07,116 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:07] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:24:15,576 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:15] "POST /update/6 HTTP/1.1" 200 -
+2024-12-12 10:24:19,632 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:19] "GET / HTTP/1.1" 200 -
+2024-12-12 10:24:19,654 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:19] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:24:19,657 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 10:24:26,060 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:26] "GET /graph/6 HTTP/1.1" 200 -
+2024-12-12 10:24:26,107 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:24:30,034 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:30] "GET /graph/4 HTTP/1.1" 200 -
+2024-12-12 10:24:30,069 - INFO - 127.0.0.1 - - [12/Dec/2024 10:24:30] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:27:06,874 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:27:06,937 - INFO -  * Restarting with stat
+2024-12-12 10:27:07,450 - INFO - Application démarrée.
+2024-12-12 10:27:07,466 - WARNING -  * Debugger is active!
+2024-12-12 10:27:07,466 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:27:29,635 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:27:29,676 - INFO -  * Restarting with stat
+2024-12-12 10:27:30,286 - INFO - Application démarrée.
+2024-12-12 10:27:30,314 - WARNING -  * Debugger is active!
+2024-12-12 10:27:30,314 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:27:35,457 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:35] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:35,551 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:49,133 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:49] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:49,164 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:49,985 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:49] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:50,005 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:50,569 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:50,585 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:27:50,607 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 10:27:50,773 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:50,789 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:50,946 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:50,962 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:51,120 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:51,151 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:51,293 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:51,318 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:51,466 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:51,482 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:27:51,656 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "GET / HTTP/1.1" 200 -
+2024-12-12 10:27:51,688 - INFO - 127.0.0.1 - - [12/Dec/2024 10:27:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:28:07,607 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:28:07.607634', 'equipment_id': 4, 'in_octets': None, 'out_octets': None}
+2024-12-12 10:28:07,607 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:07] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:28:13,307 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:13] "GET /monitor/4 HTTP/1.1" 200 -
+2024-12-12 10:28:16,074 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:28:16.074161', 'equipment_id': 4, 'in_octets': '62912941', 'out_octets': '11380704'}
+2024-12-12 10:28:16,074 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:16] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:28:18,430 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:18] "GET /graph/4 HTTP/1.1" 200 -
+2024-12-12 10:28:18,470 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:18] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:28:33,125 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:33] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:33,157 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:33] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:28:39,030 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:39] "POST /update/6 HTTP/1.1" 200 -
+2024-12-12 10:28:39,086 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:39] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:39,112 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:39] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:28:40,964 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:40] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:40,995 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:40] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:28:41,721 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:41] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:41,750 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:28:41,920 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:41] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:41,939 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:28:42,097 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:42] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:42,120 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:28:42,256 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:42] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:42,287 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:28:42,445 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:42] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:42,477 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:28:59,926 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:59] "GET / HTTP/1.1" 200 -
+2024-12-12 10:28:59,947 - INFO - 127.0.0.1 - - [12/Dec/2024 10:28:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:29:00,704 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:00] "GET / HTTP/1.1" 200 -
+2024-12-12 10:29:00,720 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:29:00,893 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:00] "GET / HTTP/1.1" 200 -
+2024-12-12 10:29:00,908 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:29:01,675 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:01] "GET / HTTP/1.1" 200 -
+2024-12-12 10:29:01,690 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:01] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:29:01,690 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 10:29:02,285 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:02] "GET / HTTP/1.1" 200 -
+2024-12-12 10:29:02,291 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:02] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:29:02,291 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 10:29:02,592 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:02] "GET / HTTP/1.1" 200 -
+2024-12-12 10:29:02,592 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:02] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:29:02,607 - INFO - 127.0.0.1 - - [12/Dec/2024 10:29:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 10:30:00,483 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:30:00,563 - INFO -  * Restarting with stat
+2024-12-12 10:30:01,152 - INFO - Application démarrée.
+2024-12-12 10:30:01,169 - WARNING -  * Debugger is active!
+2024-12-12 10:30:01,169 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:30:04,726 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:30:04.726425', 'equipment_id': 4, 'in_octets': '63058584', 'out_octets': '11423773'}
+2024-12-12 10:30:04,726 - INFO - 127.0.0.1 - - [12/Dec/2024 10:30:04] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:32:20,394 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:20] "GET / HTTP/1.1" 200 -
+2024-12-12 10:32:20,770 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:20] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:32:38,210 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:38] "POST /add HTTP/1.1" 200 -
+2024-12-12 10:32:38,323 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:38] "GET / HTTP/1.1" 200 -
+2024-12-12 10:32:38,339 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:38] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:32:41,072 - INFO - Surveillance de trafic pour l'équipement ID 7 : {'timestamp': '2024-12-12T10:32:41.068820', 'equipment_id': 7, 'in_octets': '0', 'out_octets': '0'}
+2024-12-12 10:32:41,072 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:41] "GET /traffic/7 HTTP/1.1" 200 -
+2024-12-12 10:32:45,858 - INFO - 127.0.0.1 - - [12/Dec/2024 10:32:45] "GET /monitor/7 HTTP/1.1" 200 -
+2024-12-12 10:36:05,331 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:36:05,395 - INFO -  * Restarting with stat
+2024-12-12 10:36:05,955 - INFO - Application démarrée.
+2024-12-12 10:36:05,971 - WARNING -  * Debugger is active!
+2024-12-12 10:36:05,971 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:36:58,447 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:36:58,572 - INFO -  * Restarting with stat
+2024-12-12 10:36:59,141 - INFO - Application démarrée.
+2024-12-12 10:36:59,172 - WARNING -  * Debugger is active!
+2024-12-12 10:36:59,172 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:37:03,990 - INFO - Application démarrée.
+2024-12-12 10:37:04,010 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-12 10:37:04,010 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-12 10:37:04,015 - INFO -  * Restarting with stat
+2024-12-12 10:37:04,517 - INFO - Application démarrée.
+2024-12-12 10:37:04,517 - WARNING -  * Debugger is active!
+2024-12-12 10:37:04,531 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:37:09,341 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:09] "GET / HTTP/1.1" 200 -
+2024-12-12 10:37:09,451 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:09] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:37:25,778 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:25] "POST /update/7 HTTP/1.1" 200 -
+2024-12-12 10:37:25,870 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:25] "GET / HTTP/1.1" 200 -
+2024-12-12 10:37:25,899 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:25] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:37:52,911 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:37:52,962 - INFO -  * Restarting with stat
+2024-12-12 10:37:53,529 - INFO - Application démarrée.
+2024-12-12 10:37:53,546 - WARNING -  * Debugger is active!
+2024-12-12 10:37:53,546 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:37:56,683 - INFO - Application démarrée.
+2024-12-12 10:37:56,711 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-12 10:37:56,711 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-12 10:37:56,711 - INFO -  * Restarting with stat
+2024-12-12 10:37:57,164 - INFO - Application démarrée.
+2024-12-12 10:37:57,178 - WARNING -  * Debugger is active!
+2024-12-12 10:37:57,186 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:37:59,270 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:59] "GET / HTTP/1.1" 200 -
+2024-12-12 10:37:59,364 - INFO - 127.0.0.1 - - [12/Dec/2024 10:37:59] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:38:00,872 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:00] "GET / HTTP/1.1" 200 -
+2024-12-12 10:38:00,889 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:00] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:38:07,863 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:07] "POST /update/7 HTTP/1.1" 200 -
+2024-12-12 10:38:07,967 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:07] "GET / HTTP/1.1" 200 -
+2024-12-12 10:38:07,983 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:38:21,277 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:21] "POST /update/7 HTTP/1.1" 200 -
+2024-12-12 10:38:21,365 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:21] "GET / HTTP/1.1" 200 -
+2024-12-12 10:38:21,380 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:21] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:38:24,862 - INFO - Surveillance de trafic pour l'équipement ID 7 : {'timestamp': '2024-12-12T10:38:24.862641', 'equipment_id': 7, 'in_octets': '0', 'out_octets': '0'}
+2024-12-12 10:38:24,862 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:24] "GET /traffic/7 HTTP/1.1" 200 -
+2024-12-12 10:38:27,812 - INFO - 127.0.0.1 - - [12/Dec/2024 10:38:27] "GET /monitor/7 HTTP/1.1" 200 -
+2024-12-12 10:40:09,916 - INFO - 127.0.0.1 - - [12/Dec/2024 10:40:09] "GET /graph/4 HTTP/1.1" 200 -
+2024-12-12 10:40:09,948 - INFO - 127.0.0.1 - - [12/Dec/2024 10:40:09] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:40:18,857 - INFO - 127.0.0.1 - - [12/Dec/2024 10:40:18] "GET / HTTP/1.1" 200 -
+2024-12-12 10:40:18,904 - INFO - 127.0.0.1 - - [12/Dec/2024 10:40:18] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:40:18,904 - INFO - 127.0.0.1 - - [12/Dec/2024 10:40:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 10:45:10,593 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:10] "POST /update/7 HTTP/1.1" 200 -
+2024-12-12 10:45:10,693 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:10] "GET / HTTP/1.1" 200 -
+2024-12-12 10:45:10,703 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:10] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:45:18,187 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:18] "GET /logs HTTP/1.1" 200 -
+2024-12-12 10:45:18,233 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:18] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:45:25,857 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:25] "GET / HTTP/1.1" 200 -
+2024-12-12 10:45:25,888 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:45:27,852 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:27] "GET /graph/4 HTTP/1.1" 200 -
+2024-12-12 10:45:27,894 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:27] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:45:36,742 - INFO - 127.0.0.1 - - [12/Dec/2024 10:45:36] "GET /graph/data/4?start_date=&end_date=&show_in=false&show_out=true HTTP/1.1" 200 -
+2024-12-12 10:46:34,761 - INFO - 127.0.0.1 - - [12/Dec/2024 10:46:34] "GET / HTTP/1.1" 200 -
+2024-12-12 10:46:34,808 - INFO - 127.0.0.1 - - [12/Dec/2024 10:46:34] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:46:40,182 - INFO - 127.0.0.1 - - [12/Dec/2024 10:46:40] "POST /update/4 HTTP/1.1" 200 -
+2024-12-12 10:46:40,304 - INFO - 127.0.0.1 - - [12/Dec/2024 10:46:40] "GET / HTTP/1.1" 200 -
+2024-12-12 10:46:40,320 - INFO - 127.0.0.1 - - [12/Dec/2024 10:46:40] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:47:11,704 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:47:11.704449', 'equipment_id': 4, 'in_octets': '68646519', 'out_octets': '14926325'}
+2024-12-12 10:47:11,704 - INFO - 127.0.0.1 - - [12/Dec/2024 10:47:11] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:48:39,647 - INFO -  * Detected change in 'c:\\Users\\stren\\Downloads\\Supervision-via-SNMP-master_test\\Supervision-via-SNMP-master\\Supervision-via-SNMP-master\\app.py', reloading
+2024-12-12 10:48:39,866 - INFO -  * Restarting with stat
+2024-12-12 10:48:40,523 - INFO - Application démarrée.
+2024-12-12 10:48:40,540 - WARNING -  * Debugger is active!
+2024-12-12 10:48:40,540 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:48:54,882 - INFO - Application démarrée.
+2024-12-12 10:48:54,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-12 10:48:54,915 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-12 10:48:54,918 - INFO -  * Restarting with stat
+2024-12-12 10:48:55,311 - INFO - Application démarrée.
+2024-12-12 10:48:55,318 - WARNING -  * Debugger is active!
+2024-12-12 10:48:55,318 - INFO -  * Debugger PIN: 138-848-920
+2024-12-12 10:48:58,930 - INFO - 127.0.0.1 - - [12/Dec/2024 10:48:58] "GET / HTTP/1.1" 200 -
+2024-12-12 10:48:59,024 - INFO - 127.0.0.1 - - [12/Dec/2024 10:48:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:49:05,806 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:05] "POST /update/4 HTTP/1.1" 200 -
+2024-12-12 10:49:05,916 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:05] "GET / HTTP/1.1" 200 -
+2024-12-12 10:49:05,938 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:49:09,387 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:09] "GET / HTTP/1.1" 200 -
+2024-12-12 10:49:09,419 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:09] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:49:35,657 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:35] "POST /update/4 HTTP/1.1" 200 -
+2024-12-12 10:49:35,729 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:35] "GET / HTTP/1.1" 200 -
+2024-12-12 10:49:35,744 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:49:37,422 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:37] "GET /graph/4 HTTP/1.1" 200 -
+2024-12-12 10:49:37,453 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:37] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:49:43,745 - INFO - Équipement supprimé : {'id': 6, 'name': 'Simulateur SNMP', 'ip': '192.168.141.98', 'description': 'Test'}
+2024-12-12 10:49:43,745 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:43] "POST /delete/6 HTTP/1.1" 200 -
+2024-12-12 10:49:43,824 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:43] "GET / HTTP/1.1" 200 -
+2024-12-12 10:49:43,827 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2024-12-12 10:49:54,080 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:54] "POST /update/7 HTTP/1.1" 200 -
+2024-12-12 10:49:54,158 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:54] "GET / HTTP/1.1" 200 -
+2024-12-12 10:49:54,176 - INFO - 127.0.0.1 - - [12/Dec/2024 10:49:54] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:50:14,699 - INFO - 127.0.0.1 - - [12/Dec/2024 10:50:14] "POST /add HTTP/1.1" 200 -
+2024-12-12 10:50:14,806 - INFO - 127.0.0.1 - - [12/Dec/2024 10:50:14] "GET / HTTP/1.1" 200 -
+2024-12-12 10:50:14,823 - INFO - 127.0.0.1 - - [12/Dec/2024 10:50:14] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:50:16,846 - INFO - Équipement supprimé : {'id': 8, 'name': 'test ajout', 'ip': '1', 'description': 'test'}
+2024-12-12 10:50:16,846 - INFO - 127.0.0.1 - - [12/Dec/2024 10:50:16] "POST /delete/8 HTTP/1.1" 200 -
+2024-12-12 10:50:16,908 - INFO - 127.0.0.1 - - [12/Dec/2024 10:50:16] "GET / HTTP/1.1" 200 -
+2024-12-12 10:50:16,940 - INFO - 127.0.0.1 - - [12/Dec/2024 10:50:16] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:51:27,958 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:51:27.958046', 'equipment_id': 4, 'in_octets': '68985551', 'out_octets': '15151787'}
+2024-12-12 10:51:27,958 - INFO - 127.0.0.1 - - [12/Dec/2024 10:51:27] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:52:28,024 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:52:28.024444', 'equipment_id': 4, 'in_octets': '69023421', 'out_octets': '15164532'}
+2024-12-12 10:52:28,024 - INFO - 127.0.0.1 - - [12/Dec/2024 10:52:28] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:53:28,421 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:53:28.421931', 'equipment_id': 4, 'in_octets': '69058457', 'out_octets': '15168965'}
+2024-12-12 10:53:28,421 - INFO - 127.0.0.1 - - [12/Dec/2024 10:53:28] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:54:31,500 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:54:31.500877', 'equipment_id': 4, 'in_octets': '69096013', 'out_octets': '15174292'}
+2024-12-12 10:54:31,500 - INFO - 127.0.0.1 - - [12/Dec/2024 10:54:31] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:55:31,418 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:55:31.418844', 'equipment_id': 4, 'in_octets': '69159803', 'out_octets': '15178616'}
+2024-12-12 10:55:31,418 - INFO - 127.0.0.1 - - [12/Dec/2024 10:55:31] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:56:31,650 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:56:31.650732', 'equipment_id': 4, 'in_octets': '69365184', 'out_octets': '15240641'}
+2024-12-12 10:56:31,650 - INFO - 127.0.0.1 - - [12/Dec/2024 10:56:31] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:56:36,218 - INFO - 127.0.0.1 - - [12/Dec/2024 10:56:36] "GET / HTTP/1.1" 200 -
+2024-12-12 10:56:36,236 - INFO - 127.0.0.1 - - [12/Dec/2024 10:56:36] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:56:41,741 - INFO - 127.0.0.1 - - [12/Dec/2024 10:56:41] "GET / HTTP/1.1" 200 -
+2024-12-12 10:56:41,772 - INFO - 127.0.0.1 - - [12/Dec/2024 10:56:41] "GET /static/style.css HTTP/1.1" 200 -
+2024-12-12 10:57:31,637 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:57:31.622093', 'equipment_id': 4, 'in_octets': '69401319', 'out_octets': '15248032'}
+2024-12-12 10:57:31,637 - INFO - 127.0.0.1 - - [12/Dec/2024 10:57:31] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:58:36,165 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:58:36.165143', 'equipment_id': 4, 'in_octets': '69440845', 'out_octets': '15253276'}
+2024-12-12 10:58:36,165 - INFO - 127.0.0.1 - - [12/Dec/2024 10:58:36] "GET /traffic/4 HTTP/1.1" 200 -
+2024-12-12 10:59:36,347 - INFO - Surveillance de trafic pour l'équipement ID 4 : {'timestamp': '2024-12-12T10:59:36.347011', 'equipment_id': 4, 'in_octets': '70554315', 'out_octets': '15455588'}
+2024-12-12 10:59:36,347 - INFO - 127.0.0.1 - - [12/Dec/2024 10:59:36] "GET /traffic/4 HTTP/1.1" 200 -

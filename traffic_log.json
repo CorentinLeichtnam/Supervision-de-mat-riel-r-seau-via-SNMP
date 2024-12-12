@@ -1,0 +1,178 @@
+{
+    "timestamp": "2024-12-12T01:15:14.806925",
+    "equipment_id": 4,
+    "in_octets": "3835744888",
+    "out_octets": "74984802"
+}{
+    "timestamp": "2024-12-12T01:15:17.892757",
+    "equipment_id": 4,
+    "in_octets": "3835748453",
+    "out_octets": "74986844"
+}{
+    "timestamp": "2024-12-12T01:15:18.941177",
+    "equipment_id": 4,
+    "in_octets": "3835748453",
+    "out_octets": "74986844"
+}{
+    "timestamp": "2024-12-12T01:15:19.773825",
+    "equipment_id": 4,
+    "in_octets": "3835748453",
+    "out_octets": "74986844"
+}{
+    "timestamp": "2024-12-12T01:15:20.725424",
+    "equipment_id": 4,
+    "in_octets": "3835748453",
+    "out_octets": "74986844"
+}{
+    "timestamp": "2024-12-12T01:15:21.440870",
+    "equipment_id": 4,
+    "in_octets": "3835748453",
+    "out_octets": "74986844"
+}{
+    "timestamp": "2024-12-12T01:15:22.342812",
+    "equipment_id": 4,
+    "in_octets": "3835748453",
+    "out_octets": "74986844"
+}{
+    "timestamp": "2024-12-12T01:25:25.149268",
+    "equipment_id": 4,
+    "in_octets": "3838724610",
+    "out_octets": "76131611"
+}{
+    "timestamp": "2024-12-12T01:29:43.503210",
+    "equipment_id": 4,
+    "in_octets": "3839827700",
+    "out_octets": "76775475"
+}{
+    "timestamp": "2024-12-12T01:29:48.056953",
+    "equipment_id": 4,
+    "in_octets": "3839829487",
+    "out_octets": "76779441"
+}{
+    "timestamp": "2024-12-12T01:30:01.284831",
+    "equipment_id": 4,
+    "in_octets": "3839844530",
+    "out_octets": "76799618"
+}{
+    "timestamp": "2024-12-12T01:30:46.441960",
+    "equipment_id": 4,
+    "in_octets": "3839882904",
+    "out_octets": "76856883"
+}{
+    "timestamp": "2024-12-12T01:33:47.251392",
+    "equipment_id": 4,
+    "in_octets": "3847977368",
+    "out_octets": "77857867"
+}{
+    "timestamp": "2024-12-12T08:05:18.917256",
+    "equipment_id": 5,
+    "in_octets": "",
+    "out_octets": ""
+}{
+    "timestamp": "2024-12-12T08:05:20.880697",
+    "equipment_id": 5,
+    "in_octets": "",
+    "out_octets": ""
+}{
+    "timestamp": "2024-12-12T08:05:55.753046",
+    "equipment_id": 4,
+    "in_octets": "0",
+    "out_octets": "0"
+}{
+    "timestamp": "2024-12-12T08:05:58.573097",
+    "equipment_id": 4,
+    "in_octets": "0",
+    "out_octets": "0"
+}{
+    "timestamp": "2024-12-12T08:05:59.373946",
+    "equipment_id": 4,
+    "in_octets": "0",
+    "out_octets": "0"
+}{
+    "timestamp": "2024-12-12T08:06:00.839917",
+    "equipment_id": 4,
+    "in_octets": "0",
+    "out_octets": "0"
+}{
+    "timestamp": "2024-12-12T08:06:04.811140",
+    "equipment_id": 4,
+    "in_octets": "0",
+    "out_octets": "0"
+}{
+    "timestamp": "2024-12-12T08:10:52.981522",
+    "equipment_id": 5,
+    "in_octets": "",
+    "out_octets": ""
+}{
+    "timestamp": "2024-12-12T08:10:55.989528",
+    "equipment_id": 4,
+    "in_octets": "42519204",
+    "out_octets": "3028364"
+}{
+    "timestamp": "2024-12-12T08:13:39.885253",
+    "equipment_id": 5,
+    "in_octets": null,
+    "out_octets": null
+}{
+    "timestamp": "2024-12-12T08:13:49.039680",
+    "equipment_id": 4,
+    "in_octets": "42673639",
+    "out_octets": "3049161"
+}{
+    "timestamp": "2024-12-12T08:13:55.313624",
+    "equipment_id": 5,
+    "in_octets": null,
+    "out_octets": null
+}{"timestamp": "2024-12-12T08:21:30.555550", "equipment_id": 4, "in_octets": "45869473", "out_octets": "4261733"}
+{"timestamp": "2024-12-12T08:25:21.912862", "equipment_id": 4, "in_octets": "46152720", "out_octets": "4320880"}
+{"timestamp": "2024-12-12T08:25:22.825266", "equipment_id": 4, "in_octets": "46153027", "out_octets": "4320990"}
+{"timestamp": "2024-12-12T08:25:23.442344", "equipment_id": 4, "in_octets": "46153165", "out_octets": "4320990"}
+{"timestamp": "2024-12-12T08:25:23.832982", "equipment_id": 4, "in_octets": "46153165", "out_octets": "4320990"}
+{"timestamp": "2024-12-12T08:25:24.031204", "equipment_id": 4, "in_octets": "46153225", "out_octets": "4320990"}
+{"timestamp": "2024-12-12T08:25:24.435194", "equipment_id": 4, "in_octets": "46153979", "out_octets": "4323327"}
+{"timestamp": "2024-12-12T08:25:24.669361", "equipment_id": 4, "in_octets": "46154513", "out_octets": "4324096"}
+{"timestamp": "2024-12-12T08:25:24.875408", "equipment_id": 4, "in_octets": "46161250", "out_octets": "4333479"}
+{"timestamp": "2024-12-12T08:26:12.123150", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:12.335761", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:12.718906", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:13.127954", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:13.443027", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:13.670678", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:13.876409", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:26:14.119347", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:27:19.012056", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:27:20.151158", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:27:20.448905", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:27:20.532564", "equipment_id": 5, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T08:32:35.320160", "equipment_id": 4, "in_octets": "46665618", "out_octets": "4645490"}
+{"timestamp": "2024-12-12T08:34:50.389157", "equipment_id": 4, "in_octets": "46847407", "out_octets": "4739120"}
+{"timestamp": "2024-12-12T08:35:38.267991", "equipment_id": 5, "in_octets": "", "out_octets": ""}
+{"timestamp": "2024-12-12T08:51:31.406279", "equipment_id": 4, "in_octets": "48064537", "out_octets": "5557431"}
+{"timestamp": "2024-12-12T08:51:31.583827", "equipment_id": 5, "in_octets": "", "out_octets": ""}
+{"timestamp": "2024-12-12T08:51:31.766840", "equipment_id": 6, "in_octets": "", "out_octets": ""}
+{"timestamp": "2024-12-12T08:51:36.850605", "equipment_id": 4, "in_octets": "48075137", "out_octets": "5564840"}
+{"timestamp": "2024-12-12T08:58:14.511538", "equipment_id": 4, "in_octets": "48714767", "out_octets": "5901075"}
+{"timestamp": "2024-12-12T08:59:14.448662", "equipment_id": 4, "in_octets": "48780518", "out_octets": "5939510"}
+{"timestamp": "2024-12-12T09:07:18.144817", "equipment_id": 4, "in_octets": "55650210", "out_octets": "6961164"}
+{"timestamp": "2024-12-12T09:16:57.416914", "equipment_id": 4, "in_octets": "56649431", "out_octets": "7447364"}
+{"timestamp": "2024-12-12T09:43:15.190372", "equipment_id": 7, "in_octets": "59250467", "out_octets": "8996105"}
+{"timestamp": "2024-12-12T10:00:36.783381", "equipment_id": 4, "in_octets": "59645436", "out_octets": "9117515"}
+{"timestamp": "2024-12-12T10:01:36.747326", "equipment_id": 4, "in_octets": "59840062", "out_octets": "9687813"}
+{"timestamp": "2024-12-12T10:02:36.424672", "equipment_id": 4, "in_octets": "59961675", "out_octets": "9841949"}
+{"timestamp": "2024-12-12T10:18:17.186118", "equipment_id": 4, "in_octets": "61904537", "out_octets": "10774718"}
+{"timestamp": "2024-12-12T10:23:14.648097", "equipment_id": 4, "in_octets": "62420917", "out_octets": "11188340"}
+{"timestamp": "2024-12-12T10:28:07.607634", "equipment_id": 4, "in_octets": null, "out_octets": null}
+{"timestamp": "2024-12-12T10:28:16.074161", "equipment_id": 4, "in_octets": "62912941", "out_octets": "11380704"}
+{"timestamp": "2024-12-12T10:30:04.726425", "equipment_id": 4, "in_octets": "63058584", "out_octets": "11423773"}
+{"timestamp": "2024-12-12T10:32:41.068820", "equipment_id": 7, "in_octets": "0", "out_octets": "0"}
+{"timestamp": "2024-12-12T10:38:24.862641", "equipment_id": 7, "in_octets": "0", "out_octets": "0"}
+{"timestamp": "2024-12-12T10:47:11.704449", "equipment_id": 4, "in_octets": "68646519", "out_octets": "14926325"}
+{"timestamp": "2024-12-12T10:51:27.958046", "equipment_id": 4, "in_octets": "68985551", "out_octets": "15151787"}
+{"timestamp": "2024-12-12T10:52:28.024444", "equipment_id": 4, "in_octets": "69023421", "out_octets": "15164532"}
+{"timestamp": "2024-12-12T10:53:28.421931", "equipment_id": 4, "in_octets": "69058457", "out_octets": "15168965"}
+{"timestamp": "2024-12-12T10:54:31.500877", "equipment_id": 4, "in_octets": "69096013", "out_octets": "15174292"}
+{"timestamp": "2024-12-12T10:55:31.418844", "equipment_id": 4, "in_octets": "69159803", "out_octets": "15178616"}
+{"timestamp": "2024-12-12T10:56:31.650732", "equipment_id": 4, "in_octets": "69365184", "out_octets": "15240641"}
+{"timestamp": "2024-12-12T10:57:31.622093", "equipment_id": 4, "in_octets": "69401319", "out_octets": "15248032"}
+{"timestamp": "2024-12-12T10:58:36.165143", "equipment_id": 4, "in_octets": "69440845", "out_octets": "15253276"}
+{"timestamp": "2024-12-12T10:59:36.347011", "equipment_id": 4, "in_octets": "70554315", "out_octets": "15455588"}

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 4,
+        "name": "Simulateur SNMP",
+        "ip": "127.0.0.1",
+        "description": "Simulateur pour tester les requ\u00eate SNMP"
+    },
+    {
+        "id": 7,
+        "name": "test",
+        "ip": "192.168.141.202",
+        "description": "Cl\u00e9m"
+    }
+]
